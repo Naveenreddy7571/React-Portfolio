@@ -1,5 +1,5 @@
 :root {
-  --backgound-color: #fff;
+  --background-color: #fff;
   --btn-color: #0987f2;
   --btn-text-color: #fff;
   --project-card-bg: #ffffff00;
@@ -8,8 +8,8 @@
   --footer-text-color: #888;
 }
 
-[data-theme="dark"] {
-  --backgound-color: #222;
+[data-theme='dark'] {
+  --background-color: #222;
   --btn-color: #fff;
   --btn-text-color: #222;
   --project-card-bg: #fff;
@@ -19,18 +19,18 @@
 }
 
 body {
-  background-color: var(--backgound-color);
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
-  margin: 0 60px;
-  height: fit-content;
+  margin: 0 auto 60px;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 60px;
 }
+
 h1,
 h2,
 h3,
@@ -43,20 +43,24 @@ p {
 h2,
 h3,
 p {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
+
 h1,
 h2 {
   text-transform: uppercase;
 }
+
 h2,
 h3 {
   font-size: 20px;
 }
+
 h1 {
-  font-family: "Ruvik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 32px;
 }
+
 p {
   font-size: 16px;
   font-weight: 300;
@@ -65,10 +69,12 @@ p {
 .sectionTitle {
   margin-bottom: 30px;
 }
+
 .hover {
   cursor: pointer;
 }
-@media (width >=800px) {
+
+@media (width >= 800px) {
   #root {
     gap: 100px;
   }
@@ -83,22 +89,20 @@ p {
     font-size: 20px;
   }
 
-  .sectionTitle{
-    margin-bottom:60px;
+  .sectionTitle {
+    margin-bottom: 60px;
+  }
+
+  @media (width >= 1400px) {
+    #root {
+      gap: 200px;
+    }
+    h1 {
+      font-size: 48px;
+    }
+
+    .sectionTitle {
+      margin-bottom: 75px;
+    }
   }
 }
-
-@media (width >=1400px) {
-  #root {
-    gap: 200px;
-  }
-  h1 {
-    font-size: 48px;
-  }
-
-
-  .sectionTitle{
-    margin-bottom:75px;
-  }
-}
-
