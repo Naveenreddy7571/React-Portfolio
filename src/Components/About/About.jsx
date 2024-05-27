@@ -4,7 +4,7 @@ import Styles from "./Aboutt.module.css";
 const AboutMe = () => {
 
   return (
-    <section className={Styles.container}>
+    <section id="aboutme" className={Styles.container}>
       <h2 className={Styles.sectionTitle}>About Me</h2>
       <p className={Styles.aboutmedescription}>
         Aspiring Full-Stack Developer with a Strong Foundation in Data

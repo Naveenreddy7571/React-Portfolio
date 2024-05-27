@@ -23,7 +23,7 @@ export default function Skills() {
   };
 
   return (
-    <section className={styles.container}>
+    <section id="skills" className={styles.container}>
       <h1 className={styles.sectionTitle}>Skills</h1>
       <hr />
       <h2>Web Technologies</h2>
