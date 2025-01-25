@@ -33,7 +33,9 @@
     gap: 15px;
 
 }
-
+.sectionTitle{
+    color:var(--text-color)
+}
 @media(width>=800px)
 {
     .projectsContainer
